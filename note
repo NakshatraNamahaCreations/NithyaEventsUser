@@ -1,0 +1,177 @@
+
+            // 'AIzaSyBv8pwRYDC8uGhJyOHghEemPrvccKl2WaA',
+
+
+
+                   
+        ${
+            //   serviceOrders.length > 0 && (
+            //     <tr style="background-color: yellow;">
+            //       <td>Service</td>
+            //       <td></td>
+            //       <td> </td>
+            //       <td></td>
+            //       <td> </td>
+            //       <td> </td>
+            //     </tr>
+            //   )
+            // }
+            // ${serviceOrders.map(item => (
+            //   <tr>
+            //     <td>{item.shopName}</td>
+            //     <td>- </td>
+            //     <td>-</td>
+            //     <td> ₹{item.pricing}</td>
+            //     <td>{bookingInfo.number_of_days}</td>
+            //     <td>₹{item.pricing * bookingInfo.number_of_days}</td>
+            //   </tr>
+           ))}
+
+           import React from "react";
+import { ScrollView, Text, StyleSheet } from "react-native";
+
+const TermsAndConditions = () => {
+  return (
+    <ScrollView style={styles.container}>
+      <Text style={styles.header}>Terms and Conditions of Use</Text>
+
+      {/* Section 1 */}
+      <Text style={styles.subHeader}>1. Introduction</Text>
+      <Text style={styles.paragraph}>
+        This Agreement outlines the terms and conditions that govern the rental
+        of equipment and related services provided by NithyaEvent. By accessing,
+        browsing, or using the NithyaEvent mobile application or website
+        (collectively, the “Platform”), you, the user, agree to adhere to these
+        Terms and Conditions and acknowledge that any breach may lead to the
+        suspension of your account or legal action if necessary.
+      </Text>
+      <Text style={styles.paragraph}>
+        NithyaEvent offers rental equipment for events, including sound
+        systems, lighting, cameras, and more, which are intended solely for the
+        purposes outlined during the rental process. By using the Platform, you
+        confirm that you will handle all rented equipment responsibly, in line
+        with the intended use, and maintain the equipment in the condition it
+        was provided.
+      </Text>
+      <Text style={styles.paragraph}>
+        These Terms and Conditions apply to all interactions on the Platform,
+        including account registration, equipment rental, service usage, and
+        payments. NithyaEvent reserves the right to modify or update these
+        terms at any time, and it is your responsibility to review the Terms
+        and Conditions periodically to stay informed of any changes. By
+        continuing to use the Platform after such updates, you agree to the
+        revised terms.
+      </Text>
+
+      {/* Section 2 */}
+      <Text style={styles.subHeader}>2. Definitions</Text>
+      <Text style={styles.paragraph}>
+        <Text style={styles.bold}>Agreement:</Text> Refers to these Terms and
+        Conditions, including any amendments, modifications, or updates made by
+        Kadagam Venture Private Limited (the “Company”) at its discretion.
+      </Text>
+      <Text style={styles.paragraph}>
+        <Text style={styles.bold}>Content:</Text> Means any text, images, audio,
+        video, software, or other materials provided or uploaded by the Company,
+        its users, or third parties onto the Portal, including all promotional,
+        informational, or instructional material.
+      </Text>
+      <Text style={styles.paragraph}>
+        <Text style={styles.bold}>Customer:</Text> Refers to any individual,
+        entity, or organization that uses the Portal to rent, purchase, or avail
+        of goods, services, or equipment.
+      </Text>
+      <Text style={styles.paragraph}>
+        <Text style={styles.bold}>Order:</Text> Means any rental, service, or
+        purchase made by a Customer through the Portal, including all associated
+        terms such as duration, fees, and conditions.
+      </Text>
+      <Text style={styles.paragraph}>
+        <Text style={styles.bold}>Product:</Text> Refers to any goods,
+        equipment, or services offered or sold by the Company through the Portal,
+        including but not limited to rental items for events.
+      </Text>
+
+      {/* Section 3 */}
+      <Text style={styles.subHeader}>3. Access and Use</Text>
+      <Text style={styles.paragraph}>
+        The Portal is provided for commercial use, non-commercial use, and
+        personal use. By accessing and using this Portal, you agree to the
+        following terms:
+      </Text>
+      <Text style={styles.listItem}>
+        - <Text style={styles.bold}>Prohibited Actions:</Text> You must not
+        modify, copy, distribute, transmit, display, perform, reproduce,
+        publish, license, create derivative works from, or sell any Content or
+        information obtained from the Portal without the prior written consent
+        of the Company.
+      </Text>
+      <Text style={styles.listItem}>
+        - <Text style={styles.bold}>Automated Access:</Text> You are prohibited
+        from using any automated software, algorithms, or manual processes to
+        scrape, crawl, or copy any Content or information from the Portal.
+      </Text>
+      <Text style={styles.listItem}>
+        - <Text style={styles.bold}>Fair Usage:</Text> You must not use the
+        Portal in any manner that could damage, disable, overburden, or impair
+        its functionality, or interfere with any other party's use and
+        enjoyment of the Portal.
+      </Text>
+      <Text style={styles.listItem}>
+        - <Text style={styles.bold}>Account Security:</Text> Account holders are
+        solely responsible for maintaining the confidentiality of their account
+        login credentials. Any activity that occurs under your account is your
+        responsibility.
+      </Text>
+
+      {/* Repeat the pattern for each section */}
+      <Text style={styles.subHeader}>4. Orders and Payments</Text>
+      <Text style={styles.paragraph}>
+        Orders placed through the Portal are subject to acceptance by the
+        Company. Payments are processed securely through e-payment gateways and
+        are subject to payment processor terms.
+      </Text>
+
+      {/* Add all the remaining sections similarly */}
+    </ScrollView>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    padding: 16,
+    backgroundColor: "#f9f9f9",
+  },
+  header: {
+    fontSize: 24,
+    fontWeight: "bold",
+    marginBottom: 16,
+    textAlign: "center",
+    color: "#333",
+  },
+  subHeader: {
+    fontSize: 20,
+    fontWeight: "600",
+    marginVertical: 8,
+    color: "#4f4f4f",
+  },
+  paragraph: {
+    fontSize: 16,
+    lineHeight: 24,
+    marginBottom: 8,
+    color: "#555",
+  },
+  listItem: {
+    fontSize: 16,
+    lineHeight: 24,
+    marginBottom: 4,
+    color: "#555",
+    marginLeft: 16,
+  },
+  bold: {
+    fontWeight: "bold",
+  },
+});
+
+export default TermsAndConditions;
